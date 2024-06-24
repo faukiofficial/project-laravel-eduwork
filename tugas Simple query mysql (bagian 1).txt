@@ -1,0 +1,58 @@
+1. Menampilkan semua kolom yang ada di tb_obat
+
+SELECT * FROM `tb_obat`
+
+_______________
+2. Menampilkan kolom nama_obat, stok_obat, dan tanggal_kadaluwarsa dari table tb_obat
+
+SELECT nama_obat, stok_obat, tanggal_kadaluwarsa FROM `tb_obat`
+
+_______________
+3. Menampilkan baris data yang kolom stok_obat lebih dari 500. Kolom akan tampil semua
+
+SELECT * FROM `tb_obat`
+WHERE stok_obat > 500;
+
+_______________
+4. Menampilkan kolom nama_obat, stok_obat, dan tanggal_kadaluwarsa dari table tb_obat. 
+Dan bari yang muncul hanya yang stok_obat lebih dari 500
+
+SELECT nama_obat, stok_obat, tanggal_kadaluwarsa FROM `tb_obat`
+WHERE stok_obat > 500;
+
+_______________
+5. Menampilkan semua kolom dari tb_transaksi dan baris yang muncul hanya yang jumlah_transaksi minimal 2 atau lebih
+
+SELECT * FROM `tb_transaksi`
+WHERE jumlah_transaksi >= 2;
+
+_______________
+6. Menampilkan semua kolom dari tb_detail_pasien, dan baris yang muncul hanya yang beragama Islam
+
+SELECT * FROM `tb_detail_pasien`
+WHERE agama = "Islam";
+
+_______________
+7. Menampilkan semua kolom dari tb_detail_pasien, dan baris yang muncul hanya yang beragama Kristen
+
+SELECT * FROM `tb_detail_pasien`
+WHERE agama = "Kristen";
+
+_______________
+8. Menampilkan semua kolom dari tb_detail_pasien, dan baris yang muncul hanya yang beragama Hindu
+
+SELECT * FROM `tb_detail_pasien`
+WHERE agama = "Hindu";
+
+_______________
+9. Menampilkan semua kolom dari tb_detail_pasien, dan baris yang muncul hanya yang beragama Buddha
+
+SELECT * FROM `tb_detail_pasien`
+WHERE agama = "Buddha";
+
+_______________
+10. Menampilkan kolom id_pasien, alamat, dan pekerjaan dari table tb_detail_pasien, dan hanya menampilkan
+baris data yang beragama Islam, meskipun kolom tersebut tidak ditampilkan
+
+SELECT id_pasien, alamat, pekerjaan FROM `tb_detail_pasien`
+WHERE agama = "Islam";
